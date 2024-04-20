@@ -1,6 +1,6 @@
 import { type NextFunction, type Request, type Response } from 'express';
 import createDebug from 'debug';
-import { HttpError } from './errors.middleware';
+import { HttpError } from './errors.middleware.js';
 import { Auth, type Payload } from '../services/auth.services.js';
 
 const debug = createDebug('W7E:auth:intercceptor');
