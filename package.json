@@ -1,0 +1,22 @@
+{
+  "name": "challenge-w7-weekend",
+  "version": "1.0.0",
+  "description": "Crea una red social con Angular. La aplicación sólo se puede usar estando logueado (en abierto únicamente se puede ver login y registro), y una vez iniciada la sesión, el usuario puede ver un listado de todos los usuarios de la red.",
+  "main": "index.js",
+  "type": "module",
+  "prettier": {
+    "singleQuote": true
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "author": "Diego",
+  "license": "ISC",
+  "dependencies": {
+    "husky": "^9.0.11"
+  },
+  "devDependencies": {
+    "eslint": "^9.1.0"
+  }
+}
