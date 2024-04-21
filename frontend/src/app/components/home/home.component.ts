@@ -2,11 +2,12 @@ import { Component, OnInit, inject } from "@angular/core";
 import { State, StateService } from "../../services/state.service";
 import { LoginComponent } from "../login/login.component";
 import { JsonPipe } from "@angular/common";
+import { UserComponent } from "../user/user.component";
 
 @Component({
   selector: "isdi-home",
   standalone: true,
-  imports: [LoginComponent, JsonPipe],
+  imports: [LoginComponent, JsonPipe, UserComponent],
   template: `
     <h2>Inicio</h2>
 
@@ -15,8 +16,7 @@ import { JsonPipe } from "@angular/common";
     } @case ('logging') {
     <isdi-login />
     } @case ('logged') {
-    <p>Bienvenido!</p>
-    <pre>{{ state.currentUser | json }}</pre>
+    <isdi-user />
     } @case ('error') {
     <p>Error de acceso</p>
     } }
